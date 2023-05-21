@@ -1,0 +1,26 @@
+.navbar-nav.flex-column {
+    align-items: center;
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-nav.flex-column {
+      flex-direction: row;
+    }
+
+    
+  }
+
+  @media (max-width:990px) {
+    .row-buttons{
+        display: flex;
+        margin-top:25px;
+       margin: auto;
+      // margin-bottom:15px;
+    }
+  }
+
+
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ADD8E6 !important;/* Replace with your desired hover color */
+  }
+
