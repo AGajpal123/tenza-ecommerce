@@ -10,6 +10,8 @@ export class NavbarComponent implements OnInit {
   isNavbarCollapsed: boolean = true;
   isDropdownCollapsed: boolean = true;
   isAboutDropdownOpen : boolean = false;
+  mobile = "+91-7880001480";
+  email = "support@tenza.com"
   constructor() { }
 
   ngOnInit(): void {

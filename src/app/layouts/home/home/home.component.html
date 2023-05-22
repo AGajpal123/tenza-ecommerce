@@ -1,2 +1,146 @@
 <!-- <p>home works!</p> -->
 <app-navbar></app-navbar>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="../../../../assets/slider/slide1.jpg" alt="Slide 1" />
+            <div class="carousel-caption">
+                <h3>Slide 1</h3>
+                <p>Slide 1 description</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../../../../assets/slider/slide2.jpg" alt="Slide 2" />
+            <div class="carousel-caption">
+                <h3>Slide 2</h3>
+                <p>Slide 2 description</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../../../../assets/slider/slide3.jpg" alt="Slide 3" />
+            <div class="carousel-caption">
+                <h3>Slide 3</h3>
+                <p>Slide 3 description</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container">
+    <div class="mt-5">
+        <h1 class="text-center">
+            Welcome To
+            <span class="text-primary fw-bold mb-5">Tenza Marketing Pvt. Ltd.</span>
+        </h1>
+        <div class="row mt-5">
+            <div class="col-md-6 para-height line-spacing">
+                <p>
+                    Tenza Marketing Pvt. Ltd. presents a lifetime opportunity for leaders
+                    who are born to conquer. Established to change the way you see, think
+                    & process network marketing. "formal education will make you a living;
+                    self-education will make you a fortune". Let's make everything u ever
+                    dream of impossible possible with our once-in-a-lifetime opportunity
+                    because every dream begins somewhere. Join us and make every day a new
+                    opportunity a brighter future with our amazing super easy income
+                    plans. Are you working towards a better life for yourself and your
+                    family? Are you in control of your future? Are you getting the rewards
+                    your hard work deserves? Your life doesn't have to be a trade-off
+                    between making the money you need and having the flexibility and time
+                    to live your life to the fullest.
+                </p>
+            </div>
+            <div class="col-md-6 img-equal-height">
+                <img src="../../../../assets/video-bg.jpg" alt="Image" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-5 mb-5 container">
+    <div class="d-flex justify-content-between mx-2">
+        <div>
+            <h3>Our Products</h3>
+            <p>Add most viewed products to weekly line up</p>
+        </div>
+        <div>
+            <button class="btn btn-primary">View All</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col" *ngFor="let item of productList">
+                <div class="card text-center">
+                    <img [src]="item.image" />
+                    <div class="bg-primary text-white mb-2 text-uppercase">
+                        <h6 class="mb-2 mt-2">{{ item.name }}</h6>
+                    </div>
+                    <small class="text-success">In Stock</small>
+                    <span style="font-size: 18px; font-weight: 500;" class="text-primary">
+                        <del class="text-danger">₹{{item.originalPrice}}</del>
+                        ₹{{item.price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="width: 100%; overflow-x: hidden;" class="mb-5">
+    <div class="row">
+        <div class="col">
+            <div class="position-relative">
+                <img src="../../../../assets/banner3.jpg" alt="Image" class="img-fluid"
+                    style="width: 100%; height: 80%;">
+                <div class="position-absolute top-50 start-50 translate-middle text-center">
+                    <span class="text-white mb-2 display-md-3 fn">SALE OF THE DAY!</span>
+                    <h1 class="text-green display-4 display-md-3 fn">
+                        SALE 50% OFF
+                    </h1>
+                    <h3 class="text-green h5 h-md-4 h-sm-5 fn">
+                        ALL AVAILABLE PRODUCTS
+                    </h3>
+                    <button class="btn btn-primary margin-top btn-discover-now btn-sm shadow">DISCOVER NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="text-center">
+        <h3 class="mb-4">Testimonials</h3>
+        <div >
+            <div class="card testimonial-card" style="background-color: rgb(246, 246, 246);border: white;">
+                <div class="card-body text-center">
+                    <img src="../../../../assets/testimonial/testimonial1.png"
+                        class="rounded-circle img-fluid profile-image shadow" alt="Profile Image">
+                    <p class="my-4">
+
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere tellus
+                        ac ante.</p>
+                    <small class="card-title fw-bold">Amber Laha</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

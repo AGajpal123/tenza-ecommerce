@@ -24,3 +24,68 @@
     color: #ADD8E6 !important;/* Replace with your desired hover color */
   }
 
+  .navbar {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .navbar-brand,
+  .navbar-nav li a {
+    color: #fff;
+  }
+
+
+  .header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left,
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone,
+  .email {
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .header-right a {
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+
+  
+
+  .ml-45{
+    margin-left: 45px
+  }
+
+  .mr-45{
+    margin-right: 45px;
+  }
+
+  .divWhite{
+    color: black;
+  }
+
+
+  .border-radius-search{
+    border-radius: 0px 18px 18px 0px;
+  }
+  
+
+  .border-radius-select{
+    border-radius: 18px 0px 0px 18px;
+    background-color: rgb(245,245,245);
+  }
