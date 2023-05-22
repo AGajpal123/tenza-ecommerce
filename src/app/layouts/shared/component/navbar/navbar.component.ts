@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -12,8 +12,13 @@ export class NavbarComponent implements OnInit {
   isAboutDropdownOpen : boolean = false;
   mobile = "+91-7880001480";
   email = "support@tenza.com"
+  isNavbarSticky = false;
   constructor() { }
-
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isNavbarSticky = (window.pageYOffset > 0);
+  }
+  
   ngOnInit(): void {
   }
 
@@ -25,5 +30,7 @@ export class NavbarComponent implements OnInit {
   toggleAboutDropdown(open: boolean): void {
     this.isAboutDropdownOpen = open;
   }
+
+  
 
 }
