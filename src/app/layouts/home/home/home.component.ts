@@ -39,6 +39,9 @@ export class HomeComponent implements OnInit {
       originalPrice:'1000'
     }
   ]
+
+  brands = ['../../../../assets/brands/brand1.png','../../../../assets/brands/brand2.png',
+  '../../../../assets/brands/brand3.png','../../../../assets/brands/brand4.png']
   constructor() { }
 
   ngOnInit(): void {
