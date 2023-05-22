@@ -1,4 +1,3 @@
-<!-- <p>home works!</p> -->
 <app-navbar></app-navbar>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -150,9 +149,11 @@
         <h3 class="mb-4">Our Brands</h3>
         <div class="row row-cols-2 row-cols-md-4 g-3">
             <div class="col" *ngFor="let item of brands;let i=index">
-              <img [src]="item" height="100px" width="120px"/>
+                <img [src]="item" height="100px" width="120px" />
             </div>
 
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>
