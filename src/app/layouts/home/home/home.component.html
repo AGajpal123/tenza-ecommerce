@@ -85,6 +85,8 @@
             <button class="btn btn-primary">View All</button>
         </div>
     </div>
+
+    
     <div class="container">
         <div class="row row-cols-3 row-cols-md-5 g-4">
             <div class="col" *ngFor="let item of productList">
@@ -131,31 +133,18 @@
         <h3 class="mb-5">Testimonials</h3>
 
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-
 
             <!-- Slides -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="testimonial">
                         <div class="card testimonial-card" style="background-color: rgb(246, 246, 246);border: white;">
-                            <div class="card-body text-center">
+                            <div class="card-body text-center mb-3">
                                 <img src="../../../../assets/testimonial/testimonial1.png"
                                     class="rounded-circle img-fluid profile-image shadow" alt="Profile Image">
-                                <p class="my-4">
-
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    posuere tellus
-                                    ac ante.</p>
-                                <small class="card-title fw-bold">Amber Laha</small>
+                                    posuere tellus ac ante.</p>
+                                <small class="card-title fw-bold mb-3">Amber Laha</small>
                             </div>
                         </div>
                     </div>
@@ -166,11 +155,8 @@
                             <div class="card-body text-center">
                                 <img src="../../../../assets/testimonial/testimonial2.png"
                                     class="rounded-circle img-fluid profile-image shadow" alt="Profile Image">
-                                <p class="my-4">
-
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    posuere tellus
-                                    ac ante.</p>
+                                    posuere tellus ac ante.</p>
                                 <small class="card-title fw-bold">Amber Laha</small>
                             </div>
                         </div>
@@ -182,17 +168,24 @@
                             <div class="card-body text-center">
                                 <img src="../../../../assets/testimonial/testimonial3.png"
                                     class="rounded-circle img-fluid profile-image shadow" alt="Profile Image">
-                                <p class="my-4">
-
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    posuere tellus
-                                    ac ante.</p>
+                                    posuere tellus ac ante.</p>
                                 <small class="card-title fw-bold">Amber Laha</small>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Add more carousel items if you have more testimonials -->
+            </div>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators" style="bottom: -15px;">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
 
             <!-- Controls -->
@@ -205,21 +198,6 @@
                 <span class="visually-hidden">Next</span>
             </a>
         </div>
-
-
-        <!-- <div>
-            <div class="card testimonial-card" style="background-color: rgb(246, 246, 246);border: white;">
-                <div class="card-body text-center">
-                    <img src="../../../../assets/testimonial/testimonial1.png"
-                        class="rounded-circle img-fluid profile-image shadow" alt="Profile Image">
-                    <p class="my-4">
-
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere tellus
-                        ac ante.</p>
-                    <small class="card-title fw-bold">Amber Laha</small>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
 

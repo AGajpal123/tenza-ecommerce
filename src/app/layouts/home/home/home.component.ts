@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
       price: '850.00',
       originalPrice: '1000',
     },
+    
   ];
 
 
