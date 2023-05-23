@@ -55,6 +55,20 @@
 }
 
 
+.card-container::-webkit-scrollbar {
+  width: 0.5rem; 
+}
+
+.card-container::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.card-container::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 2rem; 
+}
+
+
 .card-align {
   flex: 0 0 auto;
   width: 200px;
