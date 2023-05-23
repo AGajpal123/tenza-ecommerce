@@ -46,3 +46,18 @@
     height: 28px!important;
   }
 }
+
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+
+.card-align {
+  flex: 0 0 auto;
+  width: 200px;
+  margin-right: 25px;
+
+}

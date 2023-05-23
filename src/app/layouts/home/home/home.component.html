@@ -86,12 +86,18 @@
         </div>
     </div>
 
-    
-    <div class="container">
-        <div class="row row-cols-3 row-cols-md-5 g-4">
+
+    <div class="container" style="display: flex;align-items: center;">
+
+        <div><button class="btn btn-white shadow" (click)="scrollCardContainer(-200)">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button></div>
+        <!-- <div class="row row-cols-3 row-cols-md-5 g-4"> -->
+        <div class="card-container">
             <div class="col" *ngFor="let item of productList">
-                <div class="card text-center">
-                    <img [src]="item.image" />
+                <div class="card text-center card-align">
+                    <img [src]="item.image" style="width: 200px;
+                        height: 220px;" />
                     <div class="bg-primary text-white mb-2 text-uppercase">
                         <h6 class="mb-2 mt-2">{{ item.name }}</h6>
                     </div>
@@ -101,8 +107,19 @@
                         ₹{{item.price}}</span>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
+        <div><button class="btn btn-white mx-2 shadow" (click)="scrollCardContainer(200)">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button></div>
+
+        <!-- <div class="arrow-container">
+            <button class="btn btn-primary" (click)="scrollCardContainer(-200)">&larr; Left</button>
+            <button class="btn btn-primary" (click)="scrollCardContainer(200)">Right &rarr;</button>
+          </div> -->
+
     </div>
+
 </div>
 
 
@@ -141,7 +158,7 @@
                         <div class="card testimonial-card" style="background-color: rgb(246, 246, 246);border: white;">
                             <div class="card-body text-center mb-3">
                                 <img src="../../../../assets/testimonial/testimonial1.png"
-                                    class="rounded-circle img-fluid profile-image shadow" alt="Profile Image">
+                                    class="rounded-circle img-fluid profile-image shadow mb-2" alt="Profile Image">
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                                     posuere tellus ac ante.</p>
                                 <small class="card-title fw-bold mb-3">Amber Laha</small>
@@ -152,12 +169,12 @@
                 <div class="carousel-item">
                     <div class="testimonial">
                         <div class="card testimonial-card" style="background-color: rgb(246, 246, 246);border: white;">
-                            <div class="card-body text-center">
+                            <div class="card-body text-center mb-3">
                                 <img src="../../../../assets/testimonial/testimonial2.png"
-                                    class="rounded-circle img-fluid profile-image shadow" alt="Profile Image">
+                                    class="rounded-circle img-fluid profile-image shadow mb-2" alt="Profile Image">
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                                     posuere tellus ac ante.</p>
-                                <small class="card-title fw-bold">Amber Laha</small>
+                                <small class="card-title fw-bold mb-3">Amber Laha</small>
                             </div>
                         </div>
                     </div>
@@ -165,12 +182,12 @@
                 <div class="carousel-item">
                     <div class="testimonial">
                         <div class="card testimonial-card" style="background-color: rgb(246, 246, 246);border: white;">
-                            <div class="card-body text-center">
+                            <div class="card-body text-center mb-3">
                                 <img src="../../../../assets/testimonial/testimonial3.png"
-                                    class="rounded-circle img-fluid profile-image shadow" alt="Profile Image">
+                                    class="rounded-circle img-fluid profile-image shadow mb-2" alt="Profile Image">
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                                     posuere tellus ac ante.</p>
-                                <small class="card-title fw-bold">Amber Laha</small>
+                                <small class="card-title fw-bold mb-3">Amber Laha</small>
                             </div>
                         </div>
                     </div>

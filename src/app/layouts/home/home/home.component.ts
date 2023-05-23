@@ -38,6 +38,30 @@ export class HomeComponent implements OnInit {
       price: '850.00',
       originalPrice: '1000',
     },
+    {
+      image: '../../../../assets/products/6.jpeg',
+      name: 'Cardionex',
+      price: '850.00',
+      originalPrice: '1000',
+    },
+    {
+      image: '../../../../assets/products/7.jpeg',
+      name: 'Cardionex',
+      price: '850.00',
+      originalPrice: '1000',
+    },
+    {
+      image: '../../../../assets/products/8.jpeg',
+      name: 'Cardionex',
+      price: '850.00',
+      originalPrice: '1000',
+    },
+    {
+      image: '../../../../assets/products/9.jpeg',
+      name: 'Cardionex',
+      price: '850.00',
+      originalPrice: '1000',
+    },
     
   ];
 
@@ -51,4 +75,12 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+   scrollCardContainer(scrollOffset:any) {
+    const cardContainer = document.querySelector('.card-container') as HTMLElement;
+    cardContainer.scrollBy({
+      left: scrollOffset,
+      behavior: 'smooth'
+    });
+  }
 }
