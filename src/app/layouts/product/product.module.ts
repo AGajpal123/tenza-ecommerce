@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ContactUsRoutingModule } from './contact-us-routing.module';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ProductRoutingModule } from './product-routing.module';
+import { ProductComponent } from './product/product.component';
 import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    ContactUsComponent
+    ProductComponent
   ],
   imports: [
     CommonModule,
-    ContactUsRoutingModule,
+    ProductRoutingModule,
     SharedModule
   ]
 })
-export class ContactUsModule { }
+export class ProductModule { }
