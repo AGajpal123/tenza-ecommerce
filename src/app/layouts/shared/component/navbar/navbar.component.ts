@@ -13,6 +13,14 @@ export class NavbarComponent implements OnInit {
   mobile = "+91-7880001480";
   email = "support@tenza.com"
   isNavbarSticky = false;
+  items = [
+    'Sort By Average Rating',
+    'Sort By Popularity',
+    'Sort By Newness',
+    'Sort By Price : Low to High',
+    'Sort By Price : High to Low',
+    'Product Name : Z'
+  ];
   constructor() { }
   @HostListener('window:scroll', [])
   onWindowScroll() {
